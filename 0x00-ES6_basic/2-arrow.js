@@ -1,16 +1,10 @@
-/**
- * Defines a class that holds a list of San Francisco neighborhoods and adds new ones.
- */
+// Defines a class that holds a list of San Francisco neighborhoods and adds new ones.
 export default function getNeighborhoodsList() {
-    this.sanFranciscoNeighborhoods = ['SOMA', 'Union Square'];
+  this.sanFranciscoNeighborhoods = ['SOMA', 'Union Square'];
 
-    /**
-     * Adds a neighborhood to the list.
-     * @param {string} newNeighborhood - The new neighborhood to add.
-     * @returns {Array} - Updated list of neighborhoods.
-     */
-    this.addNeighborhood = (newNeighborhood) => {
-      this.sanFranciscoNeighborhoods.push(newNeighborhood);
-      return this.sanFranciscoNeighborhoods;
-    };
+  const self = this;
+  this.addNeighborhood = (newNeighborhood) => {
+    self.sanFranciscoNeighborhoods.push(newNeighborhood);
+    return self.sanFranciscoNeighborhoods;
+  };
 }
