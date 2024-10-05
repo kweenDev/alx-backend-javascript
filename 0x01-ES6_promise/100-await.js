@@ -1,9 +1,11 @@
-import { uploadPhoto, createUser } from './utils.js';
+import { uploadPhoto, createUser } from './utils';
 
 /**
  * Asynchronously uploads a photo and creates a user.
- * @returns {Promise<Object>} An object containing the results of the two async operations.
- * If either operation fails, returns an object with both properties set to null.
+ * @returns {Promise<Object>} An object containing the
+ * results of the two async operations.
+ * If either operation fails, returns an object with
+ * both properties set to null.
  */
 export default async function asyncUploadUser() {
   try {
