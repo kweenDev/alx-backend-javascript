@@ -22,7 +22,7 @@ class EVCar extends Car {
      * @return {Car} A new instance of Car (not EVCar).
      */
   cloneCar() {
-    return new Car(); // Clone returns an instance of the parent Car class.
+    return new Car(this._brand, this._motor, this._color, this._range);
   }
 }
 
