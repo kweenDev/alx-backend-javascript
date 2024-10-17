@@ -1,0 +1,6 @@
+/**
+* Demonstrates the use of the spread operator to merge arrays and strings.
+*/
+export default function concatArrays(array1, array2, string) {
+  return [...array1, ...array2, ...string];
+}
