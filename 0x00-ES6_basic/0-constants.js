@@ -1,4 +1,3 @@
-// 0-constants.js
 /**
 * Demonstrates the use of const and let for variable declaration.
 * @returns {string} task - The task string.
