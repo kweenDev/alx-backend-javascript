@@ -1,8 +1,6 @@
 /**
- * Creates an iterator for employees in the report object.
- * @param {Object} report - The report object created by createReportObject.
- * @returns {IterableIterator<string>} - Iterator to go through each employee.
- */
+* Creates an iterator for employees in the report object.
+*/
 export default function createIteratorObject(report) {
   let employees = [];
   for (const department of Object.values(report.allEmployees)) {
