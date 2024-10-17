@@ -1,12 +1,11 @@
 /**
 * Iterates through the employees object and returns a concatenated string of employee names.
 */
-export default function appendToEachArrayValue(employees) {
-  let concatenatedNames = '';
-
-  for (const [department, employeeList] of Object.entries(employees)) {
-    concatenatedNames += `${department}: ${employeeList.join(', ')}\n`;
+export default function appendToEachArrayValue(array, appendString) {
+  const arrayEnd = [];
+  for (const idx of array) {
+    arrayEnd.push(`${appendString}${idx}`);
   }
 
-  return concatenatedNames;
+  return arrayEnd;
 }
