@@ -17,3 +17,4 @@ This repository contains all the project codes for the javascript backend specil
 | [`0x02. ES6 classes`](./0x02-ES6_classes/)                     | ES6 classes - **`OOP`** **`Javascript`** **`ES6`** |
 | [`0x03. ES6 data manipulation`](./0x03-ES6_data_manipulation/) | ES6 data manipulation - **`Javascript`** **`ES6`** |
 | [`0x04. Typescript`](./0x04-TypeScript/)                       | Typescript - **`Javascript`** **`Typescript`**     |
+| [`0x05. Node JS basic`](./0x05-Node_JS_basic/)                       | NodeJS basic - **`Javascript`** **`NodeJS`**     |
