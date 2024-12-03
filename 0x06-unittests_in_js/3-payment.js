@@ -1,5 +1,5 @@
 // 3-payment.js
-const Utils = require('./utils');
+const Utils = require('./utils.js');
 
 /**
  * Simulates a payment request to an API.

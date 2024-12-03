@@ -1,23 +1,22 @@
 /**
  * Utility functions for basic calculations.
  */
-function calculateNumber(type, a, b) {
-    const roundedA = Math.round(a);
-    const roundedB = Math.round(b);
+const Utils = {
+    calculateNumber(type, a, b) {
+        a = Math.round(a);
+        b = Math.round(b);
 
-    switch (type) {
-        case 'SUM':
-            return roundedA + roundedB;
-        case 'SUBTRACT':
-            return roundedA - roundedB;
-        case 'DIVIDE':
-            if (roundedB === 0) {
+        switch (type) {
+            case 'SUM':
+                return a + b;
+            case 'SUBTRACT':
+                return a - b;
+            case 'DIVIDE':
+                return b !== 0 ? a / b : 'Error';
+            default:
                 return 'Error';
-            }
-            return roundedA / roundedB;
-        default:
-            throw new Error('Invalid type');
         }
     }
+};
 
-module.exports = calculateNumber;
+module.exports = Utils;
